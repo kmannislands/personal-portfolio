@@ -1,0 +1,16 @@
+// Override Bootstrap variables in this file, e.g.
+
+$font-size-base: 14px;
+
+
+// Colors
+$white: #fff;
+$light: #efefef;
+$dark: #232323;
+$highlight: #00B7FF;
+$badge-blue: darken($highlight, 20%);
+$deleted: #DD6666;
+$badge-pink: lighten($deleted, 10%);
+$badge-red: #8B000C;
+$badge-yellow: #fddc60;
+$badge-green: #00b300;

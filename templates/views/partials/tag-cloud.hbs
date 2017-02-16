@@ -1,0 +1,6 @@
+<a href="/blog" class="active list-group-item">{{cloud-title}}</a>
+<ul class="tag-cloud" id={}>
+	{{# each tags }}
+	<li><a href="{{categoryUrl key}}" class="black" data-bubble="8">{{name}}</a></li>
+	{{/each}}
+</ul>

@@ -1,0 +1,29 @@
+{
+  "name": "personal-portfolio",
+  "description": "personal portoflio take number million by developer kieran mann",
+  "main": "keystone.js",
+  "authors": [
+    "kieran mann"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "kieran",
+    "mann",
+    "portfolio",
+    "web",
+    "development"
+  ],
+  "homepage": "kieranmann.ca",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "typed.js": "https://github.com/mattboldt/typed.js.git#^1.1.4"
+  }
+}

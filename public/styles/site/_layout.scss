@@ -1,0 +1,36 @@
+#header {
+	margin-top: 30px;
+}
+
+#footer {
+	margin-top: 30px;
+	border-top: 1px solid #eeeeee;
+	padding-top: 30px;
+	color: #777777;
+}
+
+.full-height {
+	height: 100vh;
+
+}
+
+.gallery-image img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+h1,h2,h3,h4,h5,h6,
+.page-header,.section-header,
+.giant-span {
+	font-family: 'Oxygen Mono', monospace;
+}
+
+.giant-span,
+.giant-span + .typed-cursor {
+	font-size: 250%;
+}
+
+body, p, span, a {
+	font-family: 'Source Sans Pro', sans-serif;
+}

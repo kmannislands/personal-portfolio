@@ -1,0 +1,30 @@
+ul.tag-cloud {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+		li {
+	     display: inline-block;
+	     flex-shrink: 0;
+			 & > a {
+			     height: 2.2em;
+			     display: table-cell;
+					 vertical-align: middle;
+			     padding: 0em .3em;
+			     background-color: $light;
+			     margin: 7px 0 0 0;
+			     border-radius: 5px;
+			     border: 1px solid $dark;
+			     color: $dark;
+					 transition: all .2s ease;
+
+					 &:hover {
+						 text-decoration: none;
+						 transform: scale(1.1,1.1);
+						 transform-origin: 50% 50%;
+					 }
+			 }
+	 }
+}
