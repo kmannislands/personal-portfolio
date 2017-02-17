@@ -24,6 +24,7 @@
   ],
   "dependencies": {
     "bootstrap": "^3.3.7",
-    "typed.js": "https://github.com/mattboldt/typed.js.git#^1.1.4"
+    "typed.js": "https://github.com/mattboldt/typed.js.git#^1.1.4",
+    "font-awesome": "fontawesome#^4.7.0"
   }
 }
