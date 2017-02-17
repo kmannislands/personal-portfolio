@@ -326,5 +326,7 @@ module.exports = function () {
 		return obj._[underscoreMethod].format();
 	};
 
+	// CUSTOM Helpers
+
 	return _helpers;
 };

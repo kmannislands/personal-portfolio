@@ -1,0 +1,43 @@
+@keyframes fadeIn {
+	from {
+		opacity: 0.0;
+	}	to {
+		opacity: 1.0;
+	}
+}
+
+@keyframes pulse {
+	0% {
+		opacity: 0.0;
+		transform: scale(0.95,0.95);
+	}	50% {
+		opacity: 1.0;
+		transform: scale(1.05,1.05);
+	}
+	100% {
+		opacity: 0.0;
+		transform: scale(0.95,0.95);
+	}
+}
+
+@keyframes flipIn {
+	from {
+		opacity: 0.0;
+		max-height: 0%;
+	} to {
+		opacity: 1.0;
+		max-height: 100%;
+	}
+}
+.fadeIn {
+	animation: fadeIn .5s ease 2s both;
+}
+
+.flipIn {
+	animation: flipIn .5s ease both;
+}
+
+.pulse {
+	animation: pulse 2s ease infinite both;
+	transform-origin: 50% 50%;
+}

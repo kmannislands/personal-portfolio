@@ -10,6 +10,7 @@ exports = module.exports = function (req, res) {
 	locals.filters = {
 		post: req.params.post,
 	};
+
 	locals.data = {
 		posts: [],
 	};

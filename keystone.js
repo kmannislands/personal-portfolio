@@ -31,7 +31,7 @@ keystone.init({
 	'auto update': true,
 	'session': true,
 	'auth': true,
-	'user model': 'Y',
+	'user model': 'User',
 });
 
 // Load your project's Models
@@ -51,8 +51,8 @@ keystone.set('locals', {
 keystone.set('routes', require('./routes'));
 
 // Switch Keystone Email defaults to handlebars
-keystone.Email.defaults.templateExt = 'hbs';
-keystone.Email.defaults.templateEngine = require('handlebars');
+// keystone.Email.defaults.templateExt = 'hbs';
+// keystone.Email.defaults.templateEngine = require('handlebars');
 
 
 // Configure the navigation bar in Keystone's Admin UI
@@ -60,7 +60,8 @@ keystone.set('nav', {
 	posts: ['posts', 'post-categories'],
 	galleries: 'galleries',
 	enquiries: 'enquiries',
-	ys: 'ys',
+	works: 'works',
+	users: 'users',
 });
 
 // Start Keystone to connect to your database and initialise the web server

@@ -1,10 +1,36 @@
 {{!< default}}
-<div class="container">
+<!-- <div class="container"> -->
 	<div class="jumbotron full-height">
+		<script>
+		    $(function(){
+		        $("#or-text").typed({
+		            strings:
+								// TODO sketchy js templating, fix dis
+								{{#if typeitems }}
+								[
+									{{#each typeitems}}
+									'{{content}}',
+									{{/each}}
+
+								]
+								{{/if}},
+		            typeSpeed: 1,
+								backDelay: 1000,
+								loop: true
+		        });
+		    });
+		</script>
 		<!-- <img src="/images/logo.svg" width="160"> -->
-		<p>
-			<span class="giant-span">Hire a </span>
+		<p class="fadeIn">
+
+			<span class="giant-span">Hire </span>
 			<span class="giant-span" id="or-text"></span>
 		</p>
 	</div>
-</div>
+	<div id="balloons" class="svg-container">
+		{{> balloons }}
+	</div>
+	<div id="balloon-data" class="svg-container flipIn">
+		{{> balloon-data }}
+	</div>
+<!-- </div> -->
