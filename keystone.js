@@ -11,8 +11,8 @@ var handlebars = require('express-handlebars');
 // and documentation.
 
 keystone.init({
-	'name': 'personal-portfolio',
-	'brand': 'personal-portfolio',
+	'name': 'Kieran Mann',
+	'brand': 'Kieran Mann | Portfolio and Works',
 
 	'sass': 'public',
 	'static': 'public',
@@ -61,7 +61,7 @@ keystone.set('nav', {
 	posts: ['posts', 'post-categories'],
 	galleries: 'galleries',
 	enquiries: 'enquiries',
-	works: 'works',
+	works: ['works', 'portfolio-categories'],
 	users: 'users',
 });
 

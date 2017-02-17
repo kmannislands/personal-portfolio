@@ -20,6 +20,8 @@ var paths = {
 			'./bower_components/jquery/dist/jquery.min.js',
 			'./bower_components/bootstrap/dist/bootstrap.js',
 			'./bower_components/typed.js/dist/typed.min.js',
+			'./bower_components/Snap.svg/dist/snap.svg-min.js',
+			'./bower_components/parallax/deploy/parallax.min.js'
 		],
 		coded: [
 		],

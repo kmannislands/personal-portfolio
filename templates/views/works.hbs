@@ -1,0 +1,17 @@
+<div class="container section-header">
+	<h1>Works</h1>
+</div>
+<div class="container">
+	<!-- if galleries -->
+	{{#if works}}
+		{{#each works}}
+		<h2>{{ title }} | <small>{{ publishedDate }}</small></h2>
+		{{#if image}}<img src="{{{cloudinaryUrl image width=750 height=450 crop='fit' }}}" class="img-responsive">{{/if}}
+		<!-- <small class="pull-right text-muted">{{publishedDate}}</small> -->
+		{{{ content.full }}}
+		{{/each}}
+	{{else}}
+	<!-- else -->
+	<h3 class="text-muted">There are no works yet. Being that this is a portfolio website, one may expect that this indicates an <em>internal server error 404.</em></h3>
+	{{/if}}
+</div>

@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title>personal-portfolio</title>
+		<title>Kieran Mann | Web Developer Portfolio</title>
 		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 		<link href="/styles/site.css" rel="stylesheet">
 
@@ -68,11 +68,14 @@
 		</div>
 		<div class="container">
 			<div id="footer">
-				<p class="pull-left">Coded with <i class="fa fa-coffee"></i> by Kieran Mann</p>
+				<p class="pull-left">
+					Coded with <i class="fa fa-coffee"></i> by Kieran Mann<br>
+					&copy; 2017
+				</p>
 				<ul class="list-inline pull-right">
 					<li><a href="https://github.com/kmannislands/"><i class="fa fa-github"></i></a></li>
 					<li><a href="https://linkedin.com/in/kieran-jarrett-mann-5977b849"><i class="fa fa-linkedin"></i></a></li>
-					<li><a href="https://www.kaggle.com/kmannislands">K</a></li>
+					<li><a href="https://www.kaggle.com/kmannislands">k</a></li>
 				</ul>
 			</div>
 		</div>
@@ -88,6 +91,29 @@
 		<script src="/js/bootstrap/bootstrap-3.3.5.min.js"></script>
 
 		<script src="/js/external.min.js"></script>
+
+		<script type="text/javascript">
+			$(document).ready(function (){
+
+
+
+				let circleSizes = [];
+				Snap.selectAll('g#data-circles circle').forEach(function (el){
+					circleSizes.push({id: el.attr('id'), r: el.attr('r')});
+				});
+
+				for(let i = 0; i < circleSizes.length; i++) {
+					Snap.select(`#${circleSizes[i].id}`).attr('r', 0)
+						.animate({r: circleSizes[i].r}, 1200);
+					$('#balloon-data').removeClass('hidden');
+				}
+
+				var scene = document.getElementById('parallax-scene');
+				var parallax = new Parallax(scene);
+				parallax.enable();
+				console.log(parallax);
+			});
+		</script>
 
 
 		{{{isAdminEditorJS user}}}

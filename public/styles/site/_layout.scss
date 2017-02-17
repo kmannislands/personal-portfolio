@@ -1,7 +1,13 @@
+* {
+	outline: none !important;
+}
+
+
 #header {
 	margin-top: 30px;
 	position: absolute;
 	width: 100vw;
+	z-index: 2;
 }
 
 #footer {
@@ -16,7 +22,6 @@
 
 .full-height {
 	height: 100vh;
-
 }
 
 .gallery-image img{
@@ -33,7 +38,7 @@ h1,h2,h3,h4,h5,h6,
 
 .giant-span,
 .giant-span + .typed-cursor {
-	font-size: 250%;
+	font-size: 200%;
 }
 
 body, p, span, a {
@@ -48,10 +53,24 @@ body {
 	}
 }
 
+// not to be confused
+#body {
+	min-height: 100vh;
+}
+
 .jumbotron.full-height {
 	background-color: transparent;
   padding-top: calc(33vh - 35px);
   padding-left: 10vw;
+	position: absolute;
+	z-index: 1;
+}
+
+ul#parallax-scene {
+    list-style: none;
+    display: block;
+    width: 100vw;
+    height: 100vh;
 }
 
 // SVG Layout responsive stuff
@@ -74,6 +93,17 @@ body {
 
 }
 
+.container.section-header {
+		padding-top: 100px;
+}
+
+.jumbotron button.btn {
+	display: block;
+	position: absolute;
+	top: 50vh;
+	left: 10vw;
+}
+
 @media(min-aspect-ratio: 3/2) {
 	.svg-container svg {
 		bottom: 0;
@@ -83,5 +113,12 @@ body {
 @media(max-aspect-ratio: 3/2) {
 	.svg-container svg {
 		top: 0;
+	}
+}
+
+@media(max-width: 780px) {
+	.svg-container svg {
+		max-width: 780px !important;
+		margin-left: calc(50vw - 390px);
 	}
 }

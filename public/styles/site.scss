@@ -7,7 +7,7 @@
 
 // Include FontAwesome from bower components
 
-// @import "../../bower_components/font-awesome/scss/font-awesome.scss";
+// @import "../../bower_components/font-awesome/scss/ font-awesome.scss";
 
 // The easiest way to customise Bootstrap variables while
 // being able to easily override the source files with new
@@ -27,4 +27,5 @@
 @import "site/badges";
 @import "site/blog";
 @import "site/layout";
+@import "site/nav";
 @import "site/typed";
