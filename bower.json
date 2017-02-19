@@ -23,10 +23,14 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap": "^3.3.7",
+    "bootstrap": "v4.0.0-alpha.6",
     "typed.js": "https://github.com/mattboldt/typed.js.git#^1.1.4",
     "font-awesome": "fontawesome#^4.7.0",
     "Snap.svg": "^0.5.1",
-    "parallax": "https://github.com/wagerfield/parallax.git#^2.1.3"
+    "parallax": "https://github.com/wagerfield/parallax.git#^2.1.3",
+    "tether": "^1.4.0"
+  },
+  "resolutions": {
+    "bootstrap": "v4.0.0-alpha.6"
   }
 }

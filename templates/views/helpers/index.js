@@ -4,6 +4,12 @@ var hbs = require('handlebars');
 var keystone = require('keystone');
 var cloudinary = require('cloudinary');
 
+// international time/date/currency formatter
+var HandlebarsIntl = require('handlebars-intl');
+
+// register the international helper
+HandlebarsIntl.registerWith(hbs);
+
 // Collection of templates to interpolate
 var linkTemplate = _.template('<a href="<%= url %>"><%= text %></a>');
 var scriptTemplate = _.template('<script src="<%= src %>"></script>');
@@ -326,7 +332,14 @@ module.exports = function () {
 		return obj._[underscoreMethod].format();
 	};
 
-	// CUSTOM Helpers
+	// Custom-written helpers (not keystone.js) here
 
+	_helpers.workUrl = function (workSlug) {
+		return ('/works/' + workSlug);
+	};
+
+	_helpers.json = function (jsonData) {
+		return JSON.stringify(jsonData);
+	};
 	return _helpers;
 };

@@ -17,10 +17,13 @@ Work.add({
 	author: { type: Types.Relationship, ref: 'User', index: true },
 	publishedDate: { type: Types.Date, index: true, dependsOn: { state: 'published' } },
 	image: { type: Types.CloudinaryImage },
+	logo: { type: Types.CloudinaryImage },
+	cover: { type: Types.CloudinaryImage },
 	content: {
 		brief: { type: Types.Html, wysiwyg: true, height: 150 },
 		extended: { type: Types.Html, wysiwyg: true, height: 400 },
 	},
+	btnText: { type: String, require: true },
 	categories: { type: Types.Relationship, ref: 'PortfolioCategory', many: true },
 	technologies: { type: Types.Relationship, ref: 'technologies', many: true },
 });

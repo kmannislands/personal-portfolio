@@ -1,17 +1,33 @@
 <div class="container section-header">
-	<h1>Works</h1>
+	<div class="row">
+		<div class="col-md-10 col-md-offset-1">
+			<h1>Works</h1>
+		</div>
+	</div>
 </div>
-<div class="container">
-	<!-- if galleries -->
-	{{#if works}}
-		{{#each works}}
-		<h2>{{ title }} | <small>{{ publishedDate }}</small></h2>
-		{{#if image}}<img src="{{{cloudinaryUrl image width=750 height=450 crop='fit' }}}" class="img-responsive">{{/if}}
-		<!-- <small class="pull-right text-muted">{{publishedDate}}</small> -->
-		{{{ content.full }}}
-		{{/each}}
-	{{else}}
-	<!-- else -->
-	<h3 class="text-muted">There are no works yet. Being that this is a portfolio website, one may expect that this indicates an <em>internal server error 404.</em></h3>
-	{{/if}}
+<div class="container m-t-md">
+		<!-- if galleries -->
+		{{#if works}}
+			<div class="row card-deck">
+			{{#each works}}
+					<div class="col-xs-12 col-md-6 col-lg-4">
+						<article class="card work-item">
+							{{#if image}}
+								<img class="card-img-top img-responsive" src="{{{cloudinaryUrl image width=750 height=450 crop='fit' }}}" alt="Card image cap">
+							{{/if}}
+							<div class="card-block">
+								<!-- <h4 class="card-title">{{ title }} | <small>{{ publishedDate }}</h4> -->
+								<h4 class="card-title">{{ title }}</h4>
+								<p class="card-text">{{{ content.brief }}}</p>
+								<a href="{{ workUrl slug }}" class="btn btn-outline-success"> {{ btnText }} </a>
+								<p class="card-text text-right"><small class="text-muted ">Last updated {{ formatRelative publishedDate }}</small></p>
+							</div>
+						</article>
+					</div>
+			{{/each}}
+			</div>
+		{{else}}
+		<!-- else -->
+		<h3 class="text-muted">There are no works yet. Being that this is a portfolio website, one may expect that this indicates an <em>internal server error 404.</em></h3>
+		{{/if}}
 </div>

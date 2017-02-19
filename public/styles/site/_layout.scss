@@ -73,6 +73,13 @@ ul#parallax-scene {
     height: 100vh;
 }
 
+.list-inline {
+	li {
+		display: inline-block;
+		margin: 0 5px;
+	}
+}
+
 // SVG Layout responsive stuff
 .svg-container {
 	position: absolute;
@@ -92,6 +99,15 @@ ul#parallax-scene {
 		}
 
 }
+
+// Regular responsive image rule, somehow this isn't
+// in bootstrap alpha 4 yet?
+.img-responsive {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
 
 .container.section-header {
 		padding-top: 100px;
@@ -120,5 +136,12 @@ ul#parallax-scene {
 	.svg-container svg {
 		max-width: 780px !important;
 		margin-left: calc(50vw - 390px);
+	}
+}
+
+@media(min-width: 780px) {
+	// Select fa and kaggle icons
+	#footer ul.list-inline a {
+		font-size: 150%;
 	}
 }

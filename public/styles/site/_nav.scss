@@ -2,19 +2,19 @@ a.navbar-brand {
 	font-family: "Oxygen Mono", monospace;
 }
 
-.nav.navbar-nav li {
-		a:active,
-		a:focus,
-		a:hover {
-			background-color: transparent;
+li.nav-item {
+	margin-right: 10px;
 
-			&:before {
-				content: '> ';
-				position: absolute;
-				left: 5px;
-				animation: blink 1s infinite;
-			}
+	a:active,
+	a:focus,
+	a:hover {
+		background-color: transparent;
+
+		&:before {
+			content: '> ';
+			position: absolute;
+			animation: blink 1s infinite;
+			margin-left: -10px;
 		}
-
-
+	}
 }

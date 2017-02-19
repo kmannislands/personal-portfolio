@@ -3,7 +3,11 @@
 
 // Bootstrap can be removed entirely by deleting this line.
 
-@import "bootstrap/bootstrap";
+@import "../../bower_components/bootstrap/scss/bootstrap";
+
+// Bootstrap 4's dependency, tether
+
+@import "../../bower_components/tether/src/css/tether";
 
 // Include FontAwesome from bower components
 
@@ -29,3 +33,4 @@
 @import "site/layout";
 @import "site/nav";
 @import "site/typed";
+@import "site/works"
