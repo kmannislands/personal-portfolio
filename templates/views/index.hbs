@@ -1,25 +1,6 @@
 {{!< default}}
 <!-- <div class="container"> -->
 	<div class="jumbotron full-height">
-		<script>
-		    $(function(){
-		        $("#or-text").typed({
-		            strings:
-								// TODO sketchy js templating, fix dis
-								{{#if typeitems }}
-								[
-									{{#each typeitems}}
-									'{{content}}',
-									{{/each}}
-
-								]
-								{{/if}},
-		            typeSpeed: 1,
-								backDelay: 1000,
-								loop: true
-		        });
-		    });
-		</script>
 		<!-- <img src="/images/logo.svg" width="160"> -->
 		<p class="fadeIn">
 
@@ -54,6 +35,26 @@
 	</li>
 
 	</ul>
+
+	<script>
+			$(function(){
+					$("#or-text").typed({
+							strings:
+							// TODO sketchy js templating, fix dis
+							{{#if typeitems }}
+							[
+								{{#each typeitems}}
+								'{{content}}',
+								{{/each}}
+
+							]
+							{{/if}},
+							typeSpeed: 1,
+							backDelay: 1000,
+							loop: true
+					});
+			});
+	</script>
 
 
 

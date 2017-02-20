@@ -341,5 +341,10 @@ module.exports = function () {
 	_helpers.json = function (jsonData) {
 		return JSON.stringify(jsonData);
 	};
+
+	_helpers.imgBackground = (imgUrl, options) => {
+		var cloudUrl = _helpers.cloudinaryUrl(imgUrl, options);
+		return `background-image:url(${cloudUrl});`;
+	};
 	return _helpers;
 };

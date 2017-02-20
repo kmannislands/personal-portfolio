@@ -19,6 +19,7 @@ Work.add({
 	image: { type: Types.CloudinaryImage },
 	logo: { type: Types.CloudinaryImage },
 	cover: { type: Types.CloudinaryImage },
+	role: { type: Types.Relationship, ref: 'Role', many: true },
 	content: {
 		brief: { type: Types.Html, wysiwyg: true, height: 150 },
 		extended: { type: Types.Html, wysiwyg: true, height: 400 },

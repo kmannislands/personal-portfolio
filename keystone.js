@@ -61,7 +61,7 @@ keystone.set('nav', {
 	posts: ['posts', 'post-categories'],
 	galleries: 'galleries',
 	enquiries: 'enquiries',
-	works: ['works', 'portfolio-categories'],
+	works: ['works', 'portfolio-categories', 'roles', 'technologies'],
 	users: 'users',
 });
 
