@@ -6328,18 +6328,31 @@ a.work-link {
       width: 100%;
       left: 0; }
 
-section.work-header {
-  height: 33vh;
-  background-size: cover; }
-  section.work-header .container {
-    height: inherit;
-    display: flex;
-    justify-content: center;
-    background-attachment: fixed; }
-    section.work-header .container img {
-      min-height: 33%;
-      max-height: 66%;
-      align-self: center; }
-
 section.work-info {
-  padding: 5vw 0; }
+  padding: 100px 0; }
+
+section.mockup-section {
+  background-size: cover;
+  background-repeat: no-repeat; }
+  section.mockup-section .mockup-container {
+    transform: translate(0, 6vw); }
+  section.mockup-section .mockup-screen {
+    position: absolute;
+    display: inline-block;
+    width: 58vw;
+    height: 36.3vw;
+    margin-top: 7.7vw;
+    margin-left: 10.7vw;
+    background-size: cover; }
+  section.mockup-section .mockup-macbook {
+    width: 80vw; }
+  section.mockup-section .work-logo {
+    max-width: 33%;
+    max-height: 33%;
+    z-index: 1;
+    margin-top: -57vw; }
+
+article.work-desc * {
+  font-family: 'Source Sans Pro' !important;
+  font-weight: 300;
+  font-size: 16px !important; }

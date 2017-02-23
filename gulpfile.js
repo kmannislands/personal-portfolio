@@ -22,7 +22,7 @@ var paths = {
 			'./bower_components/thether/dist/tether.min.js',
 			'./bower_components/bootstrap/dist/js/bootstrap.min.js',
 			'./bower_components/Snap.svg/dist/snap.svg-min.js',
-			'./bower_components/parallax/deploy/parallax.min.js',
+			'./bower_components/skrollr/dist/skrollr.min.js',
 		],
 		coded: [
 		],

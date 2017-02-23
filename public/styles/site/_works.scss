@@ -74,25 +74,43 @@ a.work-link {
 
 // single work view header
 section {
-	&.work-header {
-    height: 33vh;
-    background-size: cover;
+	&.work-info {
+    padding: 100px 0;
+	}
 
-		.container {
-			height: inherit;
-			display: flex;
-			justify-content: center;
-			background-attachment: fixed;
+	&.mockup-section {
+		background-size: cover;
+		background-repeat: no-repeat;
 
-			img {
-				min-height: 33%;
-				max-height: 66%;
-				align-self: center;
-				// transform: translate(0,50%);
-			}
+		.mockup-container {
+	    transform: translate(0,6vw);
+		}
+
+		.mockup-screen {
+			position: absolute;
+			display: inline-block;
+			width: 58vw;
+			height: 36.3vw;
+			margin-top: 7.7vw;
+			margin-left: 10.7vw;
+			background-size: cover;
+		}
+
+		.mockup-macbook {
+			width: 80vw;
+		}
+
+		.work-logo {
+			max-width: 33%;
+			max-height: 33%;
+			z-index: 1;
+			margin-top: -57vw;
 		}
 	}
-	&.work-info {
-		padding: 5vw 0;
-	}
+}
+
+article.work-desc * {
+	font-family: 'Source Sans Pro' !important;
+	font-weight: 300;
+	font-size: 16px !important;
 }

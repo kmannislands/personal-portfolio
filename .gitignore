@@ -32,3 +32,6 @@ node_modules
 
 # Bower components
 bower_components
+
+# For some reason, yarn + gulp-sass breaks on heroku, so .gitignore yarn file
+yarn.lock
